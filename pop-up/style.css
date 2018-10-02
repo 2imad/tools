@@ -1,0 +1,57 @@
+body{
+    background: #ddd;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color:#111 
+}
+/* Pop up*/
+
+
+.wrapper{
+    max-width: 960px;
+    margin: 10% auto;
+    text-align: center;
+    line-height: 2em
+}
+.button{
+    border : 3px solid #111;
+    padding : 10px;
+    color: #111;
+    text-decoration: none
+}
+.popup{
+    position: fixed;
+    width: 100%;
+    height:100%;
+    left: 0;
+    top:0;
+    background: rgba(0,0,0,0.3);
+    display: none
+}
+#img-popup .popup-content{
+   width: 500px;
+   height: 600px;
+   margin: 100px auto;
+   position: relative;
+   border: 5px solid #fff 
+}
+
+.close{
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    line-height: 0;
+    padding: 11px 0 11px;
+    width: 20px;
+    text-align: center;
+
+    color: #fff 
+}
+/* Use pseudo class target to display popup */
+.popup:target{
+    display: block
+}
